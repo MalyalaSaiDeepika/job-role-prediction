@@ -1,25 +1,40 @@
-# Job Role Prediction (Milestone 1)
+# Job Role Prediction Project
 
-This project is part of my Infosys Internship.  
-The goal is to predict **job roles from educational background, certifications, and skills** using Machine Learning.
-
-## 📌 Milestone 1
-- Completed **data collection** (from Kaggle / synthetic dataset).  
-- Performed **data cleaning** (removed nulls, standardized fields).  
-- Conducted **Exploratory Data Analysis (EDA)**.  
-- Generated a **clean dataset and EDA notebook**.
-
-## 📊 Files in this Repo
-- `Infosys(M-1).ipynb` → Jupyter Notebook with data cleaning + EDA.  
-- `archive (1).zip` → Dataset used.  
-- `README.md` → Project overview.  
-- `LICENSE` → MIT License.
-
-## 🛠️ Next Steps
-- Milestone 2 → Feature Engineering & Preprocessing  
-- Milestone 3 → Model Training & Evaluation (XGBoost)  
-- Milestone 4 → Deployment (Streamlit / FastAPI)  
+## Project Overview
+This project aims to predict suitable job roles for candidates based on their resumes using machine learning. The project is structured into multiple milestones to ensure systematic progress.
 
 ---
 
-✨ Licensed under the **MIT License**.
+## Milestone 1 – Data Cleaning & Exploratory Data Analysis
+**Notebook:** `Milestone1/Infosys(M-1).ipynb`  
+
+**Objectives:**
+- Collect and integrate datasets (Education, Certifications, Skills, Job Roles)
+- Handle missing values and normalize text fields
+- Perform Exploratory Data Analysis (EDA)
+- Produce clean dataset ready for feature engineering
+
+**Output:**  
+- Cleaned dataset  
+- EDA insights notebook  
+
+---
+
+## Milestone 2 – Feature Engineering & Preprocessing Pipeline
+**Notebook:** `Milestone2/Infosys(M-2).ipynb`  
+**Pipeline File:** `Milestone2/milestone2_pipeline.pkl`  
+
+**Objectives:**
+- Encode categorical variables (Education, Certifications)  
+- Apply TF-IDF on `Skills` column  
+- Handle class imbalance using SMOTE  
+- Reduce dimensionality and prepare dataset for modeling  
+- Save preprocessing pipeline for future model training  
+
+**Output:**  
+- Feature-engineered dataset  
+- Preprocessing pipeline (`.pkl`) ready for Milestone 3  
+
+---
+
+## Folder Structure
