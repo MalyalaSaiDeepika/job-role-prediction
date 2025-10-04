@@ -38,3 +38,11 @@ This project aims to predict suitable job roles for candidates based on their re
 ---
 
 ## Folder Structure
+job-role-prediction/
+│── LICENSE
+│── README.md
+│── Infosys(M-1).ipynb
+│── Infosys(M-2).ipynb
+│── archive (1).zip
+│── milestone2_pipeline.pkl
+
