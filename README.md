@@ -2,24 +2,6 @@
 
 This repository contains the Job Role Prediction project using Machine Learning, completed as part of the Infosys Internship. The project predicts suitable job roles from resumes based on skills, experience, education, certifications, and other features.
 
-📑 Table of Contents
-
-Repository Structure
-
-Milestone 1 – Data Exploration & Initial Setup
-
-Milestone 2 – Data Preprocessing & Visualization
-
-Visualizations
-
-Dataset
-
-How to Use
-
-License
-
-Acknowledgements
-
 📂 Repository Structure
 Infosys(M-1).ipynb       → Milestone 1 notebook
 Infosys(M-2).ipynb       → Milestone 2 notebook (Data Preprocessing & Visualization)
@@ -30,13 +12,11 @@ README.md                → Project documentation
 
 📝 Milestone 1 – Data Exploration & Initial Setup
 
-🔍 Loaded and explored the dataset.
+🔍 Dataset Exploration: Loaded the dataset, checked shape, data types, and missing values.
 
-🗂 Checked dataset shape, data types, and missing values.
+🗂 Feature Analysis: Identified important features and target variable (Job Role).
 
-📊 Conducted basic analysis to identify features and target.
-
-✏️ Documented observations and initial insights.
+✏️ Observations: Documented initial insights for better understanding of dataset.
 
 🧹 Milestone 2 – Data Preprocessing & Visualization
 
@@ -44,9 +24,9 @@ README.md                → Project documentation
 
 🔄 Data Transformation: Encoded categorical features (Skills, Education, Certifications, Recruiter Decision) and target (Job Role) using LabelEncoder.
 
-📏 Feature Scaling: Scaled numerical features (Experience, Salary Expectation, Projects Count, AI Score) using StandardScaler.
+📏 Feature Scaling: Standardized numerical features (Experience, Salary Expectation, Projects Count, AI Score) using StandardScaler.
 
-📊 Data Structuring: Split dataset into features (X) and target (y) for machine learning.
+📊 Data Structuring: Prepared dataset for machine learning by splitting into features (X) and target (y).
 
 📈 Visualizations
 
