@@ -1,87 +1,120 @@
 🚀 Job Role Prediction Project
 
-📖 Overview
+This repository contains the Job Role Prediction project using Machine Learning, completed as part of the Infosys Internship. The project predicts suitable job roles from resumes based on skills, experience, education, certifications, and other features.
 
-This project is part of my Infosys Internship and aims to predict suitable job roles for candidates based on their educational background, certifications, and skills using Machine Learning.
-The work is divided into structured milestones, ensuring a systematic and professional approach from data preparation to final deployment.
+📑 Table of Contents
 
-🎯 Objectives
+Repository Structure
 
-🟢 Predict job roles from resumes and candidate profiles
+Milestone 1 – Data Exploration & Initial Setup
 
-🟢 Build an end-to-end ML pipeline (data cleaning → feature engineering → model training → deployment)
+Milestone 2 – Data Preprocessing & Visualization
 
-🟢 Demonstrate strong knowledge of EDA, feature engineering, ML models, and deployment tools
+Visualizations
 
-🏆 Milestones
-✅ Milestone 1 – Data Cleaning & Exploratory Data Analysis
+Dataset
 
-📓 Notebook: Infosys(M-1).ipynb
+How to Use
 
-🔹 Collected and integrated datasets (Education, Certifications, Skills, Job Roles)
+License
 
-🔹 Cleaned and preprocessed the raw dataset
+Acknowledgements
 
-🔹 Handled missing values and standardized text fields
+📂 Repository Structure
+Infosys(M-1).ipynb       → Milestone 1 notebook
+Infosys(M-2).ipynb       → Milestone 2 notebook (Data Preprocessing & Visualization)
+archive (1).zip          → Original dataset
+screenshots/             → Folder containing visualization images
+LICENSE                  → License file
+README.md                → Project documentation
 
-🔹 Performed Exploratory Data Analysis (EDA) with meaningful visualizations
+📝 Milestone 1 – Data Exploration & Initial Setup
 
-📌 Outputs:
+🔍 Loaded and explored the dataset.
 
-🟡 Cleaned dataset ready for ML
+🗂 Checked dataset shape, data types, and missing values.
 
-🟡 EDA report notebook
+📊 Conducted basic analysis to identify features and target.
 
-✅ Milestone 2 – Feature Engineering & Preprocessing Pipeline
+✏️ Documented observations and initial insights.
 
-📓 Notebook: Infosys(M-2).ipynb
+🧹 Milestone 2 – Data Preprocessing & Visualization
 
-🛠️ Pipeline: milestone2_pipeline.pkl
+🧼 Data Cleaning: Removed duplicates, filled missing values in Certifications.
 
-🔹 Encoded categorical variables (Education, Certifications)
+🔄 Data Transformation: Encoded categorical features (Skills, Education, Certifications, Recruiter Decision) and target (Job Role) using LabelEncoder.
 
-🔹 Applied TF-IDF vectorization on skills
+📏 Feature Scaling: Scaled numerical features (Experience, Salary Expectation, Projects Count, AI Score) using StandardScaler.
 
-🔹 Used SMOTE to handle class imbalance
+📊 Data Structuring: Split dataset into features (X) and target (y) for machine learning.
 
-🔹 Reduced dimensionality for computational efficiency
+📈 Visualizations
 
-🔹 Saved a reusable preprocessing pipeline
+🎯 Distribution of Job Roles:
+Shows the number of resumes per Job Role.
+<img src="screenshots/job_role_distribution.png" width="800"/>
 
-📌 Outputs:
+🌡️ Correlation Heatmap:
+Highlights relationships between numerical features.
+<img src="screenshots/correlation_heatmap.png" width="800"/>
 
-🟡 Feature-engineered dataset
+📊 Histograms of Numerical Features:
+Shows distribution and spread of numerical features.
+<img src="screenshots/numerical_histograms.png" width="800"/>
 
-🟡 Preprocessing pipeline for future modeling
+🗃️ Dataset
 
-🔜 Next Steps
+Dataset is provided in archive (1).zip.
 
-🔸 Milestone 3 – Model Training & Evaluation (ML algorithms, XGBoost, performance metrics)
+Columns include:
 
-🔸 Milestone 4 – Model Deployment (Streamlit / FastAPI)
+Resume_ID
 
-📂 Folder Structure
-job-role-prediction/
-│── LICENSE  
-│── README.md  
-│── Infosys(M-1).ipynb  
-│── Infosys(M-2).ipynb  
-│── archive (1).zip  
-│── milestone2_pipeline.pkl  
+Name
 
-⚙️ Tech Stack
+Skills
 
-Languages: Python
+Experience (Years)
 
-Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, NLTK, Imbalanced-learn
+Education
 
-Tools: Jupyter Notebook, GitHub, Streamlit (for deployment)
+Certifications
 
-📜 License
+Job Role
 
-This project is licensed under the MIT License – free to use and modify with attribution.
+Recruiter Decision
 
-✨ Note for Mentors/Evaluators
+Salary Expectation ($)
 
-This project was developed as part of the Infosys Internship, focusing on applying real-world ML practices to job role prediction. The repository demonstrates clarity, reproducibility, and professional documentation.
-💡 Note: Feedback and insights from previous discussions have been incorporated to improve this project.
+Projects Count
+
+AI Score (0-100)
+
+⚡ How to Use
+
+Clone the repository:
+
+git clone https://github.com/YourUsername/JobRolePrediction.git
+
+
+Open notebooks in Jupyter Notebook.
+
+Run cells sequentially:
+
+Infosys(M-1).ipynb → Milestone 1
+
+Infosys(M-2).ipynb → Milestone 2
+
+Use the preprocessed data from Milestone 2 for training ML models in later milestones.
+
+🛡️ License
+
+This project is licensed under the MIT License – see LICENSE file for details.
+
+🙏 Acknowledgements
+
+Infosys Internship program for providing project guidelines.
+
+Kaggle dataset contributors.
+
+Libraries used: pandas, numpy, scikit-learn, matplotlib, seaborn.
