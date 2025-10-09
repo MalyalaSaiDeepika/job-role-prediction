@@ -30,17 +30,22 @@ README.md                → Project documentation
 
 📈 Visualizations
 
-🎯 Distribution of Job Roles:
-Shows the number of resumes per Job Role.
-<img src="screenshots/job_role_distribution.png" width="800"/>
+🎯 Distribution of Job Roles – Shows the number of resumes per Job Role.
+<img width="1003" height="611" alt="Screenshot 2025-10-09 220117" src="https://github.com/user-attachments/assets/c4c3be07-2c84-4b88-bc9d-74bea0c66ea3" />
 
-🌡️ Correlation Heatmap:
-Highlights relationships between numerical features.
-<img src="screenshots/correlation_heatmap.png" width="800"/>
 
-📊 Histograms of Numerical Features:
-Shows distribution and spread of numerical features.
-<img src="screenshots/numerical_histograms.png" width="800"/>
+🌡️ Correlation Heatmap – Highlights relationships between numerical features.
+<img width="1134" height="845" alt="Screenshot 2025-10-09 220615" src="https://github.com/user-attachments/assets/6c4e91d6-cff4-414d-bdbc-1f8020338503" />
+
+
+📊 Histograms of Numerical Features – Shows distribution and spread of numerical features.
+<img width="1501" height="918" alt="Screenshot 2025-10-09 222159" src="https://github.com/user-attachments/assets/bbc99e46-6da9-4337-b1af-49d91d151563" />
+<img width="1493" height="907" alt="Screenshot 2025-10-09 222220" src="https://github.com/user-attachments/assets/17caf880-fb3e-40ca-9596-63cb3d215a7c" />
+<img width="781" height="478" alt="Screenshot 2025-10-09 222232" src="https://github.com/user-attachments/assets/e9fe2f30-3ff7-48d5-abca-ff67848b5f68" />
+
+
+
+
 
 🗃️ Dataset
 
