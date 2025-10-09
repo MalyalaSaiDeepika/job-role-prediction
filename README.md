@@ -72,11 +72,6 @@ AI Score (0-100)
 
 ⚡ How to Use
 
-Clone the repository:
-
-git clone https://github.com/YourUsername/JobRolePrediction.git
-
-
 Open notebooks in Jupyter Notebook.
 
 Run cells sequentially:
