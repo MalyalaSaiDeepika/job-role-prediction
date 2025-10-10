@@ -1,3 +1,27 @@
+📊 Job Role Prediction Project
+Milestone 1 – Dataset Exploration & Basic Analysis
+
+Objective: Understand the dataset, perform initial cleaning, and basic exploratory data analysis (EDA).
+
+Steps Completed:
+
+Loaded dataset and inspected columns, types, and missing values.
+
+Handled missing values.
+
+Performed basic summary statistics.
+
+Visualizations included:
+
+Count plots for categorical columns
+
+Histograms for numeric columns
+
+Correlation heatmaps
+
+<img width="1065" height="634" alt="Screenshot 2025-10-08 203336" src="https://github.com/user-attachments/assets/a4e30060-d772-4cb9-876d-1fbbe63eb389" />
+<img width="1085" height="716" alt="Screenshot 2025-10-08 203413" src="https://github.com/user-attachments/assets/33ae71c8-1407-482f-98dd-a9d37b41f06b" />
+
 💼 Job Role Prediction Project – Milestone 2
 
 ✨ Project Overview
@@ -110,3 +134,6 @@ NumPy 🔢
 Matplotlib & Seaborn 📉
 
 Scikit-learn 🤖
+
+Outcome:
+Dataset is now clean, scaled, and ready for machine learning models. Advanced visualizations give clear insights into data distribution, relationships, and outliers.
