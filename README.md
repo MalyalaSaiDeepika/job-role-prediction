@@ -1,100 +1,112 @@
-🚀 Job Role Prediction Project
+💼 Job Role Prediction Project – Milestone 2
 
-This repository contains the Job Role Prediction project using Machine Learning, completed as part of the Infosys Internship. The project predicts suitable job roles from resumes based on skills, experience, education, certifications, and other features.
+✨ Project Overview
 
-📂 Repository Structure
-Infosys(M-1).ipynb       → Milestone 1 notebook
-Infosys(M-2).ipynb       → Milestone 2 notebook (Data Preprocessing & Visualization)
-archive (1).zip          → Original dataset
-screenshots/             → Folder containing visualization images
-LICENSE                  → License file
-README.md                → Project documentation
+This project predicts Job Roles based on candidate Education, Skills, Experience, Certifications, and other features.
+Milestone 2 focuses on data preprocessing, outlier handling, encoding, scaling, and visualizations to prepare the dataset for ML models.
 
-📝 Milestone 1 – Data Exploration & Initial Setup
+📊 Dataset Information
+Feature	Type	Missing Values	Notes
+Resume_ID	Numeric	0	Unique ID
+Name	Categorical	0	Candidate Name
+Skills	Categorical	0	Candidate Skills
+Experience (Years)	Numeric	0	Years of Experience
+Education	Categorical	0	Degree Type
+Certifications	Categorical	274	Missing handled
+Job Role	Categorical	0	Target Variable
+Recruiter Decision	Categorical	188	Missing handled
+Salary Expectation ($)	Numeric	0	
+Projects Count	Numeric	0	
+AI Score (0-100)	Numeric	6	Outliers handled
+🛠 Milestone 2 Workflow
 
-🔍 Dataset Exploration: Loaded the dataset, checked shape, data types, and missing values.
+1️⃣ Load & Inspect Data
 
-🗂 Feature Analysis: Identified important features and target variable (Job Role).
+Loaded dataset into a DataFrame
 
-✏️ Observations: Documented initial insights for better understanding of dataset.
+Checked shape, data types, missing values, duplicates
 
-🧹 Milestone 2 – Data Preprocessing & Visualization
+2️⃣ Handle Missing Values
 
-🧼 Data Cleaning: Removed duplicates, filled missing values in Certifications.
+Filled categorical columns with mode
 
-🔄 Data Transformation: Encoded categorical features (Skills, Education, Certifications, Recruiter Decision) and target (Job Role) using LabelEncoder.
+Filled numeric columns with mean
 
-📏 Feature Scaling: Standardized numerical features (Experience, Salary Expectation, Projects Count, AI Score) using StandardScaler.
+3️⃣ Handle Outliers
 
-📊 Data Structuring: Prepared dataset for machine learning by splitting into features (X) and target (y).
+Capped extreme values using IQR method
+
+Checked numeric features for unusual values
+
+4️⃣ Encode Categorical Variables
+
+Converted categorical data into numeric form using Label Encoding
+
+5️⃣ Feature Scaling
+
+Standardized numeric features with Z-score scaling
+
+6️⃣ Feature Selection & Train-Test Split
+
+Split data into features (X) and target (y)
+
+Train-Test split: 80% train, 20% test
 
 📈 Visualizations
 
-🎯 Distribution of Job Roles – Shows the number of resumes per Job Role.
-<img width="1003" height="611" alt="Screenshot 2025-10-09 220117" src="https://github.com/user-attachments/assets/c4c3be07-2c84-4b88-bc9d-74bea0c66ea3" />
+Distribution of Job Roles
+
+<img width="1364" height="679" alt="Screenshot 2025-10-10 225220" src="https://github.com/user-attachments/assets/04ede74c-2c59-486f-b60b-571ccdc3b96d" />
 
 
-🌡️ Correlation Heatmap – Highlights relationships between numerical features.
-<img width="1134" height="845" alt="Screenshot 2025-10-09 220615" src="https://github.com/user-attachments/assets/6c4e91d6-cff4-414d-bdbc-1f8020338503" />
-
-
-📊 Histograms of Numerical Features – Shows distribution and spread of numerical features.
-<img width="1501" height="918" alt="Screenshot 2025-10-09 222159" src="https://github.com/user-attachments/assets/bbc99e46-6da9-4337-b1af-49d91d151563" />
-<img width="1493" height="907" alt="Screenshot 2025-10-09 222220" src="https://github.com/user-attachments/assets/17caf880-fb3e-40ca-9596-63cb3d215a7c" />
-<img width="781" height="478" alt="Screenshot 2025-10-09 222232" src="https://github.com/user-attachments/assets/e9fe2f30-3ff7-48d5-abca-ff67848b5f68" />
+Boxplots: Features vs Job Role
+<img width="1437" height="825" alt="Screenshot 2025-10-10 225247" src="https://github.com/user-attachments/assets/f22ed63b-ba75-4876-a459-f2c18393e565" />
 
 
 
+Scatter Plot: Certifications vs Job Role
+<img width="1496" height="910" alt="Screenshot 2025-10-10 225319" src="https://github.com/user-attachments/assets/7a385344-11cd-4f8a-8fd7-c31d8701e569" />
+<img width="1493" height="921" alt="Screenshot 2025-10-10 225346" src="https://github.com/user-attachments/assets/0ad10760-f203-40a8-b5e7-588efdc18393" />
+<img width="1493" height="480" alt="Screenshot 2025-10-10 225411" src="https://github.com/user-attachments/assets/e663778f-3da3-47a0-963d-8a1c004e115b" />
 
 
-🗃️ Dataset
 
-Dataset is provided in archive (1).zip.
 
-Columns include:
 
-Resume_ID
+Correlation Heatmap of Numeric Features
+<img width="1350" height="824" alt="Screenshot 2025-10-10 225425" src="https://github.com/user-attachments/assets/77f9cd29-e9c3-4712-bb84-4af5839af01a" />
 
-Name
 
-Skills
 
-Experience (Years)
+Histograms of Numeric Features
+<img width="1494" height="914" alt="Screenshot 2025-10-10 225444" src="https://github.com/user-attachments/assets/0ee4928c-6743-43d8-a0d1-6861d80b1523" />
+<img width="1494" height="917" alt="Screenshot 2025-10-10 225502" src="https://github.com/user-attachments/assets/e75eb7fe-2356-4121-937a-b3af734626fc" />
+<img width="1481" height="458" alt="Screenshot 2025-10-10 225529" src="https://github.com/user-attachments/assets/ec18c914-516b-4eb0-8fb7-5ff67eb874d5" />
 
-Education
 
-Certifications
 
-Job Role
 
-Recruiter Decision
 
-Salary Expectation ($)
+✅ Summary
 
-Projects Count
+Data Preprocessing Complete: Missing values handled, categorical features encoded
 
-AI Score (0-100)
+Outliers Managed: Capped extreme values in numeric features
 
-⚡ How to Use
+Feature Scaling Applied: Standardization done
 
-Open notebooks in Jupyter Notebook.
+Dataset Ready for ML Models: Train-test split completed
 
-Run cells sequentially:
+Visual Insights Generated: Distribution, correlation, scatter, and boxplots
 
-Infosys(M-1).ipynb → Milestone 1
+💻 Tech Stack
 
-Infosys(M-2).ipynb → Milestone 2
+Python 🐍
 
-Use the preprocessed data from Milestone 2 for training ML models in later milestones.
+Pandas 📊
 
-🛡️ License
+NumPy 🔢
 
-This project is licensed under the MIT License – see LICENSE file for details.
+Matplotlib & Seaborn 📉
 
-🙏 Acknowledgements
-
-Infosys Internship program for providing project guidelines.
-
-Kaggle dataset contributors.
-
-Libraries used: pandas, numpy, scikit-learn, matplotlib, seaborn.
+Scikit-learn 🤖
