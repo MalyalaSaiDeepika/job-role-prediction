@@ -137,3 +137,70 @@ Scikit-learn 🤖
 
 Outcome:
 Dataset is now clean, scaled, and ready for machine learning models. Advanced visualizations give clear insights into data distribution, relationships, and outliers.
+
+
+🤖 Milestone 3 – Model Building & Evaluation
+🎯 Objective
+
+Apply multiple machine learning models to predict Job Roles, compare their performance, and select the best one.
+
+⚙️ Models Applied & Parameters
+Model	Main Parameter(s)	Accuracy (%)	Key Point
+Decision Tree	criterion = gini	99.67	Very high accuracy, may overfit
+Gradient Boosting	n_estimators = 100, criterion = friedman_mse	99.89	Best performance, consistent across 5-fold CV
+Random Forest	n_estimators = 100, criterion = gini	78.93	Strong ensemble model
+AdaBoost	n_estimators = 50	60.20	Moderate performance
+SVM	kernel = rbf, max_iter = -1	44.82	Needs parameter tuning
+KNN	n_neighbors = 5	40.13	Distance-based, less effective here
+Logistic Regression	max_iter = 1000	39.13	Simple linear model
+📋 Cross-Validation
+
+Applied 5-Fold Cross Validation for model reliability.
+
+Gradient Boosting achieved 0.998994 (≈99.9%) mean accuracy — consistent across folds, indicating no overfitting.
+
+📊 Visualizations
+
+Bar Chart: Model vs Accuracy
+
+Pie Chart: Proportion of Accuracy by Model
+
+Confusion Matrix: Best model performance visualization
+
+📸 Screenshots:
+<img width="960" height="583" alt="Screenshot 2025-10-28 204726" src="https://github.com/user-attachments/assets/9d67324b-029c-4f3b-afa0-3892415c5110" />
+<img width="1104" height="598" alt="Screenshot 2025-10-28 204741" src="https://github.com/user-attachments/assets/dc1183f6-c999-4794-9320-9ddee01830f8" />
+<img width="855" height="625" alt="Screenshot 2025-10-28 204748" src="https://github.com/user-attachments/assets/f64f8605-135a-4859-b50e-c4acaf87f14a" />
+
+
+
+
+✅ Summary
+
+Compared 7 ML models using accuracy metrics.
+
+Gradient Boosting gave the best generalizable performance (99.9%).
+
+Decision Tree also showed strong results but might overfit slightly.
+
+Final model validated using 5-fold cross-validation for reliability.
+
+💻 Tech Stack
+
+Python 🐍
+
+Pandas, NumPy for data handling
+
+Matplotlib, Seaborn for visualization
+
+Scikit-learn for machine learning models and cross-validation
+
+🚀 Outcome
+
+Dataset successfully cleaned, encoded, and scaled.
+
+ML models trained and evaluated.
+
+Gradient Boosting selected as the final model for deployment.
+
+High and consistent accuracy confirms strong generalization ability.
