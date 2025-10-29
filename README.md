@@ -141,6 +141,8 @@ Dataset is now clean, scaled, and ready for machine learning models. Advanced vi
 
 
 
+
+
 🤖 Job Role Prediction Project – Milestone 3
 🎯 Objective
 
@@ -155,30 +157,16 @@ Random Forest	n_estimators = 100, criterion = 'gini'	61.81	Moderate performance,
 SVM	kernel = 'rbf', max_iter = -1	47.24	Non-linear, sensitive to scaling
 AdaBoost	n_estimators = 50	43.22	Weak learner combination
 Logistic Regression	max_iter = 1000	39.20	Linear baseline model
-📋 Cross-Validation
 
-Used 5-Fold Cross Validation for stable and unbiased accuracy measurement.
 
 KNN and Gradient Boosting showed consistent and reliable performance across folds.
 
 Models like Decision Tree and Random Forest varied slightly due to data complexity.
 
 📊 Visualizations
-1️⃣ Bar Chart – Model vs Accuracy
-
-Displays performance comparison of all models.
-
-2️⃣ Pie Chart – Accuracy Proportion
-
-Represents how much each model contributes to total performance.
-
-3️⃣ Confusion Matrix
-
-Visualizes prediction accuracy of the top model (KNN / Gradient Boosting).
-
-4️⃣ Accuracy Trend (Optional)
-
-Shows accuracy progression as parameters were tuned.
+Bar Chart
+Horizontal Bar Chart
+Pie Chart
 
 📸 Screenshots of accuracies:
 
