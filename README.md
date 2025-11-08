@@ -150,40 +150,26 @@ Apply multiple machine learning models to predict Job Roles based on candidate p
 
 ⚙️ Models Applied & Parameters
 Model	Main Parameters	Accuracy (%)	Key Point
-KNN	n_neighbors = 5	93.00	Simple, effective distance-based model
-Gradient Boosting	n_estimators = 100, criterion = 'friedman_mse'	90.00	Excellent performance, stable and generalizable
 Decision Tree	criterion = 'gini'	85.43	Easy to interpret, risk of overfitting
-Random Forest	n_estimators = 100, criterion = 'gini'	61.81	Moderate performance, depends on tuning
+Random Forest	n_estimators = 100, criterion = 'gini'	88.0 High performance
 SVM	kernel = 'rbf', max_iter = -1	47.24	Non-linear, sensitive to scaling
 AdaBoost	n_estimators = 50	43.22	Weak learner combination
 Logistic Regression	max_iter = 1000	39.20	Linear baseline model
 
 
-KNN and Gradient Boosting showed consistent and reliable performance across folds.
-
-Models like Decision Tree and Random Forest varied slightly due to data complexity.
 
 📊 Visualizations
 Bar Chart
-Horizontal Bar Chart
-Pie Chart
 
 📸 Screenshots of accuracies:
-
-<img width="1104" height="653" alt="Screenshot 2025-10-30 000109" src="https://github.com/user-attachments/assets/84772ff8-d4b4-448c-9c7f-04a96acae8ac" />
-<img width="1121" height="613" alt="Screenshot 2025-10-30 000124" src="https://github.com/user-attachments/assets/ac1a6298-1863-46e3-b0fc-dc8a71e23f9f" />
-<img width="788" height="618" alt="Screenshot 2025-10-30 000117" src="https://github.com/user-attachments/assets/ef5d7e63-a20b-4766-90a0-a4ca08928916" />
+<img width="1263" height="725" alt="Screenshot 2025-11-08 211322" src="https://github.com/user-attachments/assets/815e85c6-bb01-43a2-b0f5-724e1c8aaccc" />
 
 
 ✅ Summary
 
-Applied and compared 7 machine learning models.
-
-KNN (93%) and Gradient Boosting (91%) achieved top results.
+Applied and compared 5 machine learning models.
 
 Accuracy improved after fine-tuning and proper preprocessing.
-
-Gradient Boosting shows stable generalization; KNN offers simpler, strong performance.
 
 Dataset thoroughly preprocessed and scaled from Milestone 2.
 
@@ -202,6 +188,6 @@ Scikit-learn — ML Algorithms & Evaluation
 
 Models trained, evaluated, and compared systematically.
 
-KNN achieved the best overall performance (93%) for this dataset.
+Random Forest achieved the best overall performance (88%) for this dataset.
 
 Project ready for Milestone 4 – Deployment or Optimization.
